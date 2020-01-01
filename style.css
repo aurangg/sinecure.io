@@ -453,7 +453,7 @@ textarea:focus {
 
 /* ScrollUp */
 #scrollUp {
-  background-color: #f5bd01;
+  background-color: #29e67d;
   border-radius: 0;
   bottom: 60px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
@@ -2133,7 +2133,7 @@ textarea:focus {
   z-index: 1;
   width: 100%;
   height: 40px;
-  border-top: 1px solid #f5bd01;}
+  border-top: 1px solid #29e67d;}
   @media only screen and (max-width: 767px) {
     .bottom-footer-area {
       -ms-flex-wrap: wrap;
@@ -2183,7 +2183,7 @@ textarea:focus {
       height: 40px;
       padding: 0 20px;
       line-height: 40px;
-      color: #f5bd01;}
+      color: #29e67d;}
       .bottom-footer-area .follow-us a:hover, .bottom-footer-area .follow-us a:focus {
         color: #afa10b; }
         @media only screen and (max-width: 337px) {
@@ -2489,7 +2489,7 @@ textarea:focus {
 }
 .iconbackground{
   background-image: url(img/iconbg.png);
-  margin-bottom:70px;
+
 }
 .circlebackground{
   background-image: url(img/ballsicon2.png);
@@ -2505,17 +2505,6 @@ textarea:focus {
 /* .icons4{
   animation: slide-in-bck-center2 0.7s ease-in both;
 } */
-@media only screen and (max-width: 768px){
-
-  .iconbackground{
-    display: none;
-  }
-  .iconbackground2{
-    position: relative;
-    display: flex;
-    margin-bottom:50px;
-  }
-}
 
 .zoom{
   transition: transform .5s;
@@ -2526,14 +2515,6 @@ textarea:focus {
   transform: scale(1.2);
   cursor: pointer;
 
-}
-@media only screen and (max-width: 800px){
-  /* .coll{
-    width: 15%;
-  }
-  .coll  img{
-    width:150px;
-  } */
 }
 
 @-webkit-keyframes fade-in {
@@ -2562,19 +2543,6 @@ textarea:focus {
   box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.66);
 }
 
-@media only screen and (max-width:420px) {
-  .blackicons{
-    height:30px;
-    width:30px;
-  }
-}
-
-@media only screen and (max-width: 800px) and (min-width: 400px){
-  .hide_them{
-    display: none;
-  }
-}
-
 span.icons7 {
   animation: 3.5s ease 0s normal none infinite running zoomEffect;
   -webkit-animation: 3.5s ease 0s normal none infinite running zoomEffect;
@@ -2582,23 +2550,11 @@ span.icons7 {
   -moz--o-animation: 3.5s ease 0s normal none infinite running zoomEffect;
   display: inline-block;
 }
-
-@media only screen and (max-width:420px) {
-  .hero-area h2{
-    font-size:20px;
-  }
-}
 .icons6{
   animation: 3.5s ease 0s normal none infinite running zoomEffect;
   -webkit-animation: 3.5s ease 0s normal none infinite running zoomEffect;
   -o-animation: 3.5s ease 0s normal none infinite running zoomEffect;
   -moz--o-animation: 3.5s ease 0s normal none infinite running zoomEffect;
-}
-
-@keyframes zoomEffect {
-    0% {transform: scale(1, 1)}
-    50% {transform: scale(1.5, 1.5)}
-    100% {transform: scale(1, 1)}
 }
 .icons4{
 }
@@ -2626,62 +2582,97 @@ span.icons7 {
 .phonehomelogo{
   display: none;
 }
-@media only screen and (max-width: 768px){
-  .hometrylogo{
-    top:90px;
-    width:150px;
-    height:194px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .hometrylogo{
-    top:100px;
-    width:180px;
-    height: 232px;
-  }
-}
-
-@media only screen and (max-width:420px) {
-  .hometry, .hometrylogo{
-    display: none;
-  }
-  .phonehome{
-    position: relative;
-    display: flex;
-  }
-  .phonehomelogo {
-    display: flex;
-    position: absolute;
-    top:320px;
-    right:0;
-    width:160px;
-    height:206px;
-    animation: float2 4s ease-in-out infinite;
-  }
-}
-@media only screen and (max-width:374px) {
-  .phonehomelogo {
-    display: flex;
-    position: absolute;
-    top:220px;
-    right:0;
-    width:160px;
-    height:206px;
-  }
-}
 .title-design {
-  font-size:40px;
+  font-size:35px;
   color:#2afb87;
-  padding:40px 0px;
+  padding-top:40px;
+  text-transform: none;
 }
-@media only screen and (max-width:720px) {
-  .title-design {
-    font-size:20px;
-    text-transform: none;
-    text-align: left;
-    padding-left:10px;
-  }
+.title-design span{
+  color:white;
+  text-shadow: 0 0 4px #2afb87, 0 0 8px #2afb87, 0 0 20px #04ff74, 0 0 40px #04ff74;
+}
+.more{
+  margin:100px 0px 0 0;
+}
+.more h6{
+  text-align: center;
+}
+.more h3{
+  text-align:center;
+  color:#194e31;
+  margin-bottom:100px;
+}
+.s_stack{
+  padding:20px;
+  text-align: center;
+  /* border-radius: 60px; */
+  border-radius: 10px 30px 10px 30px;
+  border:1px solid #1e9c57;
+  margin-bottom:30px;
+}
+.s_stack h3{
+  font-size: 22px;
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+.explaination{
+  border-left:1px solid #1e9c57;
+  margin-left:20px;
+  padding-left:20px;
+  margin-top:10px;
+}
+.explaination h3{
+  font-size:18px;
+  font-weight: lighter;
+}
+.client_desc{
+  margin:60px 0;
+}
+.client_desc h1{
+  font-weight: 800;
+}
+.half-circle {
+  width: 200px;
+  height: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top: 0;
+  border:7px solid #194e31;
+  border-top-color:transparent;
+  text-align: center;
+}
+.half-circle-2{
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom: 0;
+  border:7px solid #194e31;
+  border-bottom-color:transparent;
+  text-align:center;
+}
+.circle{
+  width:160px;
+  height:80px;
+  padding-bottom:10px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom: 0;
+  border:5px solid #194e31;
+  border-top-color: transparent;
+  display: inline-block;
+}
+.circle2{
+  width: 160px;
+  height:80px;
+  margin-top: 10px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom: 0;
+  border:5px solid #194e31;
+  border-bottom-color:transparent;
+  display: inline-block;
 }
 .rectangle{
   width:100%;
@@ -2692,56 +2683,7 @@ span.icons7 {
 -moz-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.58);
 box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.58);
 }
-.services-design{
-  font-size:20px;
-  color:#2afb87;
-  text-align:center;
-  padding:10px 0px;
-  animation: blink 0.7s linear infinite;
-}
 
-@keyframes blink {
-  0%{opacity: 0;}
-  25%{opacity: 0.35;}
-  50%{opacity: 0.25;}
-  75%{opacity: 0.75;}
-  80%{opacity: 0.9;}
-  90%{opacity: 1;}
-  100%{opacity: 0.5;}
-}
-
-.stripes-1{
-  height:2px;
-  width: 100%;
-  margin-top:20px;
-  background-color:#2afb87;
-  animation: s1 2s ease-in infinite;
-}
-.stripes-2{
-  height:2px;
-  width:100%;
-  margin-top:20px;
-  background-color:#2afb87;
-  animation: s2 2s ease-in infinite;
-
-}
-/* @keyframes s1 {
-  0%{
-    width: 100%;
-  }
-  25%{
-    width:50%;
-  }
-  50%{
-    width:100%;
-  }
-  75%{
-    width: 125%;
-  }
-  100%{
-    width:100%;
-  }
-} */
 @keyframes s1 {
   0%{
     transform: translateX(0px);
@@ -2794,19 +2736,105 @@ box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.58);
   }
 }
 
-@media only screen and (max-width:1025px) {
-  .services-design{
-    font-size:18px;
+@media only screen and (max-width:374px) {
+  .phonehomelogo {
+    display: flex;
+    position: absolute;
+    top:220px;
+    right:0;
+    width:160px;
+    height:206px;
   }
 }
-@media only screen and (max-width:780px) {
-  .services-design{
-    font-size:10px;
+@media only screen and (max-width: 768px){
+  .hometrylogo{
+    top:90px;
+    width:150px;
+    height:194px;
   }
-  .stripes-1{
-    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hometrylogo{
+    top:100px;
+    width:180px;
+    height: 232px;
   }
-  .stripes-2{
-    margin-top: 15px;
+}
+
+@media only screen and (max-width:420px) {
+  .hometry, .hometrylogo{
+    display: none;
+  }
+  .phonehome{
+    position: relative;
+    display: flex;
+  }
+  .phonehomelogo {
+    display: flex;
+    position: absolute;
+    top:320px;
+    right:0;
+    width:160px;
+    height:206px;
+    animation: float2 4s ease-in-out infinite;
+  }
+}
+@media only screen and (max-width: 768px){
+
+  .iconbackground{
+    display: none;
+  }
+  .iconbackground2{
+    position: relative;
+    display: flex;
+    margin-bottom:50px;
+  }
+}
+@media only screen and (max-width:720px) {
+  .title-design {
+    font-size:20px;
+    text-transform: none;
+    text-align: center;
+
+  }
+}
+@keyframes zoomEffect {
+    0% {transform: scale(1, 1)}
+    50% {transform: scale(1.5, 1.5)}
+    100% {transform: scale(1, 1)}
+}
+
+@media only screen and (max-width:420px) {
+  .blackicons{
+    height:30px;
+    width:30px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px){
+  .hide_them{
+    display: none;
+  }
+}
+@media only screen and (max-width:420px) {
+  .hero-area h2{
+    font-size:20px;
+  }
+}
+@media only screen and (max-width:450px) {
+  .half-circle, .half-circle-2, .circle, .circle2{
+    display: none;
+  }
+  .client_desc h1{
+    font-size:25px;
+    padding:10px;
+    text-align: center;
+  }
+  .s_stack {
+    padding:10px;
+  }
+  .explaination h3{
+    padding:10px;
   }
 }
