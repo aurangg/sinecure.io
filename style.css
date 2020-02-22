@@ -607,8 +607,16 @@ textarea:focus {
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .clever-main-menu .classynav ul li a {
         padding: 0 8px; } }
-    .clever-main-menu .classynav ul li a:hover, .clever-main-menu .classynav ul li a:focus {
-      color: #b5a710; }
+        .clever-main-menu .classynav ul li a:hover, .clever-main-menu .classynav ul li a:focus{
+          width:100%;
+          height:2px;
+          background-color:white;
+          box-shadow: 0 0 4px #2afb87, 0 0 8px #2afb87, 0 0 20px #04ff74, 0 0 40px #04ff74;
+          }
+          .clever-main-menu .classynav .active{
+            color:white;
+            text-shadow: 0 0 4px #2afb87, 0 0 8px #2afb87, 0 0 20px #04ff74, 0 0 40px #04ff74;
+          }
   .clever-main-menu .search-area {
     position: relative;
     z-index: 1; }
@@ -2795,6 +2803,19 @@ box-shadow: 0px 1px 17px -6px rgba(42,251,135,0.72);
     transform: translateX(0px);
   }
 }
+.about {
+  position: relative;
+}
+.about .img{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phoneAbout{
+  display: none;
+}
 
 @media only screen and (max-width:374px) {
   .phonehomelogo {
@@ -2854,10 +2875,10 @@ box-shadow: 0px 1px 17px -6px rgba(42,251,135,0.72);
   }
 }
 @media only screen and (max-width:450px) {
-  .hometry, .hometrylogo{
+  .hometry, .hometrylogo, .about{
     display: none;
   }
-  .phonehome{
+  .phonehome, .phoneAbout{
     position: relative;
     display: flex;
   }
